@@ -1,0 +1,27 @@
+{
+  "name": "blo-png",
+  "version": "1.0.0",
+  "main": "./dist/cjs/index.cjs",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "typings": "./dist/esm/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build:cjs": "tsup identicon.ts --format cjs --out-dir dist/cjs",
+    "build:esm": "tsup identicon.ts --format esm --out-dir dist/esm",
+    "build": "rm -rf dist && npm run build:cjs && npm run build:esm"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@pdf-lib/upng": "^1.0.1",
+    "blo": "^2.0.0",
+    "memoize": "^10.1.0",
+    "viem": "^2.23.15"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
+  }
+}
