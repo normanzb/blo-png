@@ -6,6 +6,9 @@
   "types": "./dist/esm/index.d.ts",
   "typings": "./dist/esm/index.d.ts",
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build:cjs": "tsup identicon.ts --format cjs --out-dir dist/cjs",
     "build:esm": "tsup identicon.ts --format esm --out-dir dist/esm",
